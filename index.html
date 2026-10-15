@@ -72,6 +72,25 @@ function openInvite() {
   document.getElementById("cover").style.display = "none";
   document.getElementById("invite").style.display = "block";
 }
+  const brideName = "JEMI Y SAJU";
+const groomName = "SAJAN P JAMES";
+
+function typeName(id, name, delay = 150) {
+  let i = 0;
+  const element = document.getElementById(id);
+  element.textContent = "";
+  function type() {
+    if (i < name.length) {
+      element.textContent += name.charAt(i);
+      i++;
+      setTimeout(type, delay);
+    }
+  }
+  type();
+}
+
+typeName("bride", brideName);
+setTimeout(() => typeName("groom", groomName), 1800);
 </script>
 </body>
 </html>
