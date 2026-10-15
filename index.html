@@ -60,7 +60,40 @@ button {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 ß
-</style>
+body {
+  background: linear-gradient(135deg, #fff7f0, #f8e5e8);
+  color: #70404b;
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+.invitation {
+  background: #fffaf5;
+  border: 2px solid #d8b58a;
+  border-radius: 20px;
+  padding: 30px 18px;
+  margin: 20px auto;
+  max-width: 420px;
+  box-shadow: 0 8px 25px rgba(100, 50, 50, 0.15);
+}
+
+.invitation h1 {
+  color: #9b5366;
+  font-family: Georgia, serif;
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+.invitation p {
+  line-height: 1.8;
+}
+
+.invitation::before {
+  content: "🌸 ✨ 💍 ✨ 🌸";
+  display: block;
+  font-size: 23px;
+  margin-bottom: 20px;
+}</style>
 </head>
 <body>
 <div class="card">
