@@ -220,6 +220,13 @@ setTimeout(() => typeName("groom", groomName), 1800);
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
+  const bgm = new Audio("leberch-invitation-wedding-375839.mp3");
+bgm.loop = true;
+bgm.volume = 0.4;
+
+function playMusic() {
+  bgm.play().catch(() => {});
+                          }
 </script>
 </body>
 </html>
