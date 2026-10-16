@@ -146,6 +146,26 @@ to {
 transform: translateY(110vh) rotate(360deg);
 opacity: 0;
 }
+  }#invite {
+  display: none;
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+}
+
+#invite.show {
+  display: block;
+  animation: inviteOpen 1s ease forwards;
+}
+
+@keyframes inviteOpen {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
   }</style>
 </head>
 <body>
@@ -194,7 +214,7 @@ opacity: 0;
 function openInvite() {
   playMusic();
   document.getElementById("cover").style.display = "none";
-  document.getElementById("invite").style.display = "block";
+  document.getElementById("invite").classList.add("show");
 }
   const brideName = "JEMI Y SAJU";
 const groomName = "SAJAN P JAMES";
